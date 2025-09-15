@@ -757,6 +757,10 @@ footer {
   cursor: pointer;
   outline: none;
 }
+.map-btn:hover{
+  background-color: #f45b25;
+  color: #000;
+}
 
 .footer-line {
   width: 100%;
