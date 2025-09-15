@@ -1,0 +1,557 @@
+/* Roboto Slab - Thin */
+@font-face {
+    font-family: 'RobotoSlab';
+    src: url('../assets/fonts/Roboto_Slab/static/RobotoSlab-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+/* Roboto Slab - ExtraLight */
+@font-face {
+    font-family: 'RobotoSlab';
+    src: url('../assets/fonts/Roboto_Slab/static/RobotoSlab-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+/* Roboto Slab - Light */
+@font-face {
+    font-family: 'RobotoSlab';
+    src: url('../assets/fonts/Roboto_Slab/static/RobotoSlab-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Roboto Slab - Regular */
+@font-face {
+    font-family: 'RobotoSlab';
+    src: url('../assets/fonts/Roboto_Slab/static/RobotoSlab-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Roboto Slab - Medium */
+@font-face {
+    font-family: 'RobotoSlab';
+    src: url('../assets/fonts/Roboto_Slab/static/RobotoSlab-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* Roboto Slab - SemiBold */
+@font-face {
+    font-family: 'RobotoSlab';
+    src: url('../assets/fonts/Roboto_Slab/static/RobotoSlab-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* Roboto Slab - Bold */
+@font-face {
+    font-family: 'RobotoSlab';
+    src: url('../assets/fonts/Roboto_Slab/static/RobotoSlab-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Roboto Slab - ExtraBold */
+@font-face {
+    font-family: 'RobotoSlab';
+    src: url('../assets/fonts/Roboto_Slab/static/RobotoSlab-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+/* Roboto Slab - Black */
+@font-face {
+    font-family: 'RobotoSlab';
+    src: url('../assets/fonts/Roboto_Slab/static/RobotoSlab-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+/* Manrope - ExtraLight */
+@font-face {
+    font-family: 'Manrope';
+    src: url('../assets/fonts/Manrope/Manrope-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+/* Manrope - Light */
+@font-face {
+    font-family: 'Manrope';
+    src: url('../assets/fonts/Manrope/Manrope-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Manrope - Regular */
+@font-face {
+    font-family: 'Manrope';
+    src: url('../assets/fonts/Manrope/Manrope-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Manrope - Medium */
+@font-face {
+    font-family: 'Manrope';
+    src: url('../assets/fonts/Manrope/static/Manrope-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* Manrope - SemiBold */
+@font-face {
+    font-family: 'Manrope';
+    src: url('../assets/fonts/Manrope/static/Manrope-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* Manrope - Bold */
+@font-face {
+    font-family: 'Manrope';
+    src: url('../assets/fonts/Manrope/static/Manrope-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Manrope - ExtraBold */
+@font-face {
+    font-family: 'Manrope';
+    src: url('../assets/fonts/Manrope/static/Manrope-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+:root {
+    --bg-color: #FFFFFF;
+    --bg-header-color: #F8EBC9;
+    --primary-font: 'Roboto Slab', serif;
+    --secondary-font: 'Manrope', sans-serif;
+    --color-text: #0E1412;
+    --color-active: #FD6038;
+}
+
+
+/* Áp dụng font mặc định */
+body {
+    font-family: 'RobotoSlab', serif;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    padding: 0 4.6875%;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 5.333333333%;
+    }
+}
+
+
+/* Header  */
+header {
+    background: var(--bg-header-color);
+    font-family: var(--secondary-font);
+    line-height: 28px;
+    font-size: 16px;
+    font-weight: 400;
+
+}
+
+.container-header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.header-logo {
+    width: 84px;
+    height: 67px;
+    cursor: pointer;
+}
+
+.header-logo-img {
+    width: 84px;
+    height: 67px;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 39px;
+    padding: 0 20px;
+}
+
+.nav-menu a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    text-decoration: none;
+    color: #0E1412;
+    transition: all ease-in 0.25s;
+    width: fit-content;
+}
+.nav-menu a:nth-child(3) {
+  color: var(--color-active);
+  font-weight: 600;
+}
+
+.nav-menu a:hover {
+    color: var(--color-active);
+    font-weight: 600;
+}
+
+.contact-phone {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 32px;
+}
+
+
+@media (max-width: 768px) {
+    .contact-header {
+        font-size: 10px;
+        line-height: 16px;
+    }
+
+    .contact-phone {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    /* --- Header --- */
+    header {
+        padding: 30px 20px 30px;
+    }
+
+    .nav-menu,
+    .header-logo {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: block;
+        width: 18px;
+        height: 16px;
+        cursor: pointer;
+    }
+
+    .mobile-menu img {
+        width: 18px;
+        height: 16px;
+        object-fit: cover;
+    }
+
+    .container-header-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .contact {
+        font-size: 10px;
+        line-height: 16px;
+    }
+
+    .contact-phone {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+}
+
+/* header */
+
+
+.contact {
+    margin: 40px auto;
+}
+
+.form-header {
+    max-width: 64%;
+}
+
+@media (max-width: 768px) {
+    .form-header {
+        max-width: 100%;
+    }
+}
+
+
+.form-header h1 {
+    margin-bottom: 18px;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 52px;
+    font-family: 'RobotoSlab', serif;
+}
+
+@media (max-width: 768px) {
+    .form-header h1 {
+        font-size: 21px;
+        line-height: 26px;
+        margin-bottom: 12px;
+    }
+}
+
+
+.form-header p {
+    margin-top: 0;
+    color: #586863;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    font-family: 'Manrope', sans-serif;
+}
+
+@media (max-width: 768px) {
+    .form-header p {
+        font-size: 10px;
+        line-height: 16px;
+    }
+}
+
+
+.formContact {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.form-row {
+    display: flex;
+    gap: 30px;
+}
+
+.form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.form-group label {
+    margin-bottom: 12px;
+    color: #0E1412;
+    font-family: 'Manrope', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+
+}
+
+
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 20px;
+    border: 1px solid #BECCC7;
+    border-radius: 2px;
+    font-size: 18px;
+    font-family: 'Manrope', sans-serif;
+    color: #586863;
+}
+
+.form-group select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding-right: 40px;
+    background: url('../assets/images/contact/dropdown.png') no-repeat right 12px center;
+    background-size: 16px;
+    padding-right: 40px;
+
+}
+
+.form-group select::after {
+    content: url('../assets/images/contact/dropdown.png');
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+
+.form-group textarea {
+    min-height: 330px;
+    resize: vertical;
+}
+
+@media (max-width: 768px) {
+    .form-group textarea {
+        min-height: 148px;
+    }
+}
+
+
+.full-width {
+    width: 100%;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-submit {
+    background: #FD6038;
+    color: #fff;
+    border: none;
+    padding: 15px 35px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-family: 'Manrope', sans-serif;
+    width: fit-content;
+}
+
+.btn-submit:hover {
+    background: #d63c12;
+}
+
+.map {
+    margin-top: 100px;
+    margin-bottom: 70px;
+    border: none;
+    border-radius: 6px;
+}
+
+.footer {
+    border-top: 1px solid #BECCC7;
+    padding-top: 28px;
+}
+
+.footer-container {
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.footer-left p {
+    font-size: 14px;
+    color: #586863;
+    font-family: 'Manrope', sans-serif;
+    margin: 0;
+    font-weight: 400;
+}
+
+.footer-logo {
+    height: 40px;
+}
+
+.footer-right {
+    display: flex;
+    gap: 10px;
+}
+
+.social {
+    background-color: #0E1412;
+    padding: 14px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all ease-in 0.25s;
+}
+
+.social:hover {
+    background-color: #FD6038;
+}
+
+
+.footer-right .social img {
+    display: block;
+    transition: transform 0.2s ease;
+}
+
+.fb {
+    width: 6px;
+    height: 10px;
+    padding: 14px 16px;
+}
+
+.lk {
+    width: 10px;
+    height: 10px;
+    padding: 14px 14px;
+}
+
+.twitter {
+    width: 12px;
+    height: 10px;
+    padding: 14px 13px;
+
+}
+
+.ig {
+    width: 10px;
+    height: 10px;
+    padding: 14px 14px;
+}
+
+.footer-right .social img:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+
+    .footer {
+        display: none;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .footer-left {
+        flex-direction: column;
+    }
+}
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .map {
+        display: none;
+    }
+
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .form-row {
+        flex-direction: column;
+    }
+
+    .form-actions {
+        justify-content: center;
+    }
+}

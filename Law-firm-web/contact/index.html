@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Page</title>
+        <!-- Font -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet">
+        <!-- Font -->
+
+        <!-- CSS  -->
+        <link rel="stylesheet" href="index.css">
+        <!-- CSS  -->
+    </head>
+    <body>
+
+        <header class="header container">
+            <div class="container-header-content">
+            <div class="header-logo">
+                <img class="header-logo-img"
+                src="../assets//images/header/logo.png" alt="logo">
+            </div>
+            <div class="mobile-menu">
+                <img src="../assets/images/about/menu_hamburger.png"
+                alt="mobile_menu">
+            </div>
+            <nav class="nav-menu">
+                <a href="/Law-firm-web/home/file.html">Home<i class="fa-solid fa-angle-down"></i></a>
+                <a href="/Law-firm-web/about/index.html">About<i class="fa-solid fa-angle-down"></i></a>
+                <a href="/Law-firm-web/contact/index.html">Practice Areas<i
+                    class="fa-solid fa-angle-up"></i></a>
+                <a href="/Law-firm-web/profile/index.html">Attorneys<i
+                    class="fa-solid fa-angle-down"></i></a>
+                <a href="/Law-firm-web/blog/index.html">Page<i class="fa-solid fa-angle-down"></i></a>
+            </nav>
+            <div class="contact-header">Call: <span class="contact-phone">(000) 123
+                456 789</span>
+            </div>
+            </div>
+        </header>
+
+        <section id="contact" class="contact container">
+            <div class="form-header">
+                <h1>Contact With Justice Law Firm</h2>
+                <p>
+                    At The Justice Law Firm, our clients are our top priority.
+                    Fueled by passion
+                    and determination, we have a reputation for legal excellence
+                    in North Carolina.
+                    Our firm was established in 1907 and we’ve been delivering
+                    best.
+                </p>
+            </div>
+
+            <form class="formContact">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name"
+                            placeholder="Your first name" />
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name"
+                            placeholder="Your last name" />
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="text" id="phone"
+                            placeholder="Your phone here" />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email"
+                            placeholder="Your email here" />
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="service">Service</label>
+                        <select id="service">
+                            <option>Practice Area</option>
+                            <option>Criminal Law</option>
+                            <option>Family Law</option>
+                            <option>Business Law</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="lawyer">Lawyer</label>
+                        <select id="lawyer">
+                            <option>Specific Attorney</option>
+                            <option>John Doe</option>
+                            <option>Jane Smith</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group full-width">
+                    <label for="message">Message</label>
+                    <textarea id="message"
+                        placeholder="Write your messages"></textarea>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn-submit">Send
+                        Message</button>
+                </div>
+            </form>
+            <iframe
+                class="map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3874.7087809194936!2d109.18582247586566!3d13.796421096257395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x316f6b52d6095055%3A0x440c2b2b868ee49e!2zMjc2IMSQw6BvIFThuqVuLCBOaMahbiBCw6xuaCwgUXV5IE5oxqFuLCBCw6xuaCDEkOG7i25oLCBWaWV0bmFt!5e0!3m2!1sen!2s!4v1742917339742!5m2!1sen!2s"
+                width="100%"
+                height="667"
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade">
+            </iframe>
+
+            <footer class="footer">
+                <div class="footer-container">
+                    <!-- Logo + text -->
+                    <div class="footer-left">
+                        <img src="../assets/images/contact/logo.png" alt="Justice Law Firm"
+                            class="footer-logo" />
+                        <p>Copyright © 2022 UI HUIT All Rights Reserved</p>
+                    </div>
+
+                    <!-- Social icons -->
+                    <div class="footer-right">
+                        <a href="#" class="social fb"><img src="../assets/images/contact/fb.png"
+                                alt="Facebook" /></a>
+                        <a href="#" class="social lk"><img src="../assets/images/contact/linked-in.png"
+                                alt="LinkedIn" /></a>
+                        <a href="#" class="social twitter"><img src="../assets/images/contact/x.png"
+                                alt="Twitter" /></a>
+                        <a href="#" class="social ig"><img src="../assets/images/contact/ig.png"
+                                alt="Instagram" /></a>
+                    </div>
+                </div>
+            </footer>
+
+        </section>
+
+    </body>
+</html>
