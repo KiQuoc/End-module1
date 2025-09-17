@@ -191,6 +191,16 @@ header {
     display: flex;
     gap: 39px;
     padding: 0 20px;
+    list-style: none;
+    margin: 0;
+}
+
+.nav-menu li {
+  position: relative;
+}
+
+.nav-menu > li > a:hover {
+    color: var(--color-active);
 }
 
 .nav-menu a {
@@ -200,18 +210,46 @@ header {
     gap: 6px;
     text-decoration: none;
     color: #0E1412;
-    transition: all ease-in 0.25s;
     width: fit-content;
 }
-.nav-menu a:nth-child(3) {
+.nav-menu li:nth-child(5) > a {
   color: var(--color-active);
   font-weight: 600;
 }
 
-.nav-menu a:hover {
-    color: var(--color-active);
-    font-weight: 600;
+.sub-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  min-width: 160px;
+  background: #fff;
+  border: 1px solid #ddd;
+  z-index: 1000;
 }
+
+
+.sub-menu > li >  a {
+  padding: 10px;
+  color: var(--bg-color);
+}
+
+.dropdown:hover .sub-menu {
+  display: block;
+  background:var(--color-text);
+}
+
+.sub-menu > li:hover{
+  background: var(--bg-color);
+}
+
+.sub-menu > li:hover > a{
+  color: var(--color-active);
+}
+
 
 .contact-phone {
     font-weight: 700;
@@ -475,7 +513,6 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all ease-in 0.25s;
 }
 
 .social:hover {

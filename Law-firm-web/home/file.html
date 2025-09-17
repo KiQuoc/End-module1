@@ -21,18 +21,36 @@
           <img class="header-logo-img"
             src="../assets/images/header/logo.png" alt="logo">
         </div>
-        <div class="mobile-menu">
+        <!-- <div class="mobile-menu">
           <img src="../assets/images/about/menu_hamburger.png"
             alt="mobile_menu">
-        </div>
-        <nav class="nav-menu">
-          <a href="../home/file.html">Home<i class="fa-solid fa-angle-up"></i></a>
-          <a href="../about/index.html">About<i class="fa-solid fa-angle-down"></i></a>
-          <a href="../contact/index.html">Practice Areas<i
-              class="fa-solid fa-angle-down"></i></a>
-          <a href="../profile/index.html">Attorneys<i
-              class="fa-solid fa-angle-down"></i></a>
-          <a href="../blog/index.html">Page<i class="fa-solid fa-angle-down"></i></a>
+        </div> -->
+    
+  <!-- Overlay -->
+  <label for="menu-toggle" class="overlay"></label>
+        <nav class="nav-bar">
+          <ul class="nav-menu">
+              <li><a href="../home/file.html">Home<i class="fa-solid fa-angle-up"></i></a></li>
+              <li><a href="../about/index.html">About<i class="fa-solid fa-angle-down"></i></a></li>
+              <li>
+                <a href="">Practice Areas<i
+                    class="fa-solid fa-angle-down"></i></a>
+              </li>
+              <li>
+                <a href="../profile/index.html">Attorneys<i
+                    class="fa-solid fa-angle-down"></i></a>
+              </li>
+              <li class="dropdown"><a>Page<i class="fa-solid fa-angle-down"></i></a>
+                <ul class="sub-menu">
+                  <li>
+                    <a href="../blog/index.html">Blog</a>
+                  </li>
+                  <li>
+                    <a href="../contact/index.html">Contact</a>
+                  </li>
+                </ul>
+              </li>
+          </ul>
         </nav>
         <div class="contact">Call: <span class="contact-phone">(000) 123
             456 789</span>
@@ -393,10 +411,25 @@
             </div>
           </div>
           <div class="faq-accordion">
-            <div class="accordion-item-active">
-              <div class="accordion-header">
+            <ul class="accordion">
+              <li class="accordion-item">
+                <input type="checkbox" id="faq1" hidden>
+                <label for="faq1" class="accordion-header">
+                  <h3 class="accordion-title">Why should I hire an attorney?</h3>
+                  <i class="fas fa-chevron-down"></i>
+                </label>
+                <div class="accordion-content">
+                  <p>
+                   When you are faced with a personal injury, the physical and emotional burden should not be taken for granted. Hiring an attorney not only provides trusted legal guidance but someone to stand in your corner when you need it most. Insurance companies are seeking their best interest and not your own, so it’s always a good idea to seek counsel.
+                  </p>
+                </div>
+              </li>
+            </ul>
+
+              <!-- <div class="accordion-header">
                 <h3 class="accordion-title">Why should I hire an
-                  attorney?</h3><i class="fas fa-chevron-up"></i>
+                  attorney?</h3> 
+                  <i class="fas fa-chevron-up"></i>
               </div>
               <div class="accordion-content">
                 <p>When you are faced with a personal injury, the physical and
@@ -406,7 +439,8 @@
                   companies are seeking their best interest and not your own, so
                   it's always a good idea to seek counsel.</p>
               </div>
-            </div>
+            </div> -->
+  
 
             <div class="accordion-item">
               <span class="accordion--line"></span>
@@ -532,10 +566,10 @@
           </div>
           <div class="nav-list">
             <div class="nav-heading">Pages</div>
-            <a href="#" class="nav-item">Home</a>
-            <a href="#" class="nav-item">About</a>
+            <a href="../home/file.html" class="nav-item">Home</a>
+            <a href="../about/index.html" class="nav-item">About</a>
             <a href="#" class="nav-item">Practice Areas</a>
-            <a href="#" class="nav-item">Attorneys</a>
+            <a href="../profile/index.html" class="nav-item">Attorneys</a>
           </div>
           <div class="nav-list">
             <div class="nav-heading">Justice</div>

@@ -191,6 +191,16 @@ header {
     display: flex;
     gap: 39px;
     padding: 0 20px;
+    list-style: none;
+    margin: 0;
+}
+
+.nav-menu li {
+  position: relative;
+}
+
+.nav-menu > li > a:hover {
+    color: var(--color-active);
 }
 
 .nav-menu a {
@@ -200,18 +210,44 @@ header {
     gap: 6px;
     text-decoration: none;
     color: #0E1412;
-    transition: all ease-in 0.25s;
     width: fit-content;
 }
-
-.nav-menu a:nth-child(5) {
+.nav-menu li:nth-child(5) > a {
   color: var(--color-active);
   font-weight: 600;
 }
 
-.nav-menu a:hover {
-    color: var(--color-active);
-    font-weight: 600;
+.sub-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  min-width: 160px;
+  background: #fff;
+  border: 1px solid #ddd;
+  z-index: 1000;
+}
+
+
+.sub-menu > li >  a {
+  padding: 10px;
+  color: var(--bg-color);
+}
+
+.dropdown:hover .sub-menu {
+  display: block;
+  background:var(--color-text);
+}
+
+.sub-menu > li:hover{
+  background: var(--bg-color);
+}
+
+.sub-menu > li:hover > a{
+  color: var(--color-active);
 }
 
 .contact-phone {
@@ -384,6 +420,10 @@ header {
     max-width: 90%;
 }
 
+.blog-content h3:hover{
+    color: #FD6038;
+}
+
 .author {
     display: flex;
     align-items: center;
@@ -457,7 +497,6 @@ header {
     font-weight: 600;
     text-decoration: none;
     font-size: 18px;
-    transition: all ease-in 0.3s;
 }
 /* Responsive */
 @media (max-width: 768px) {
@@ -561,6 +600,7 @@ header {
     cursor: pointer;
 }
 
+
 .newSletter .layout .explain {
     color: #FFF;
     text-align: center;
@@ -630,6 +670,10 @@ header {
     font-weight: 600;
     line-height: 17.632px;
     border: none;
+}
+
+.btnNewSletter:hover{
+    background: rgb(136, 38, 2);
 }
 
 
@@ -723,6 +767,9 @@ footer {
   font-family: var(--secondary-font);
   gap: 24px;
 }
+.nav-list a:hover{
+    color: #FD6038;
+}
 
 .nav-heading {
   font-weight: 700;
@@ -767,7 +814,9 @@ footer {
   cursor: pointer;
   outline: none;
 }
-
+.map-btn:hover{
+    background-color: #FD6038;
+}
 .footer-line {
   width: 100%;
   height: 1px;
@@ -808,6 +857,8 @@ footer {
   display: flex;
   gap: 12px;
 }
+
+
 @media (max-width: 768px) {
    /* --- Footer --- */
   footer {
