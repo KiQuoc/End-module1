@@ -276,6 +276,35 @@ header {
     opacity: 1;
     visibility: visible;
   }
+
+}
+/* _-_---------- */
+
+@media (max-width: 768px) {
+  .dropdown .sub-menu {
+    display: none;
+    flex-direction: column;
+    background: var(--bg-header-color);
+    width: 100%;
+    position: relative; /* để không bị overlay */
+  }
+
+  /* Khi hover vào parent, hiển thị sub-menu */
+  .dropdown:hover .sub-menu {
+    display: flex;
+  }
+
+  /* Tăng khoảng cách cho item sub-menu */
+  .sub-menu li a {
+    padding: 10px 40px;
+    text-align: left;
+  }
+
+  /* Icon mũi tên quay xuống khi hover */
+  .dropdown:hover > a i {
+    transform: rotate(180deg);
+    transition: 0.3s;
+  }
 }
 /* mobile */
 
