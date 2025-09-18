@@ -20,8 +20,22 @@ body {
   font-weight: 400;
   color: var(--color-text);
   background: var(--bg-color);
-  max-width: 1440px;
-  margin: 0 auto;
+    user-select: none; /* Chrome, Safari, Opera */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.container {
+  padding-left: 4.6875%;
+  padding-right: 4.6875%;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding-left: 5.333333333%;
+    padding-right: 5.333333333%;
+  }
 }
 
 /* CSS Header */
@@ -29,10 +43,18 @@ header {
   background: var(--bg-header-color);
   font-family: var(--secondary-font);
   width: 100%;
-  padding: 30px 135px 30px;
+  padding-top: 30px;
+  padding-bottom: 73px;
   line-height: 28px;
   font-size: 16px;
   font-weight: 400
+}
+
+@media screen and (max-width: 992px) {
+  header {
+    line-height: 24px;
+    font-size: 14px;
+  }
 }
 
 .container-header-content {
@@ -41,9 +63,6 @@ header {
   justify-content: space-between;
 }
 
-.mobile-menu {
-  display: none;
-}
 
 .header-logo {
   width: 84px;
@@ -60,22 +79,8 @@ header {
   display: flex;
   gap: 39px;
   list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
-.nav-menu li {
-  position: relative;
-}
-
-.nav-menu > li:hover > a{
-  color: var(--color-active);
-}
-
-.nav-menu li:nth-child(4) > a{
-  color: var(--color-active);
-  font-weight: 600;
-}
 .nav-menu a {
   display: flex;
   align-items: center;
@@ -83,6 +88,19 @@ header {
   gap: 6px;
   text-decoration: none;
   color: #0E1412;
+}
+
+.nav-menu > li:hover > a{
+  color: var(--color-active);
+}
+
+.nav-menu li {
+  position: relative;
+}
+
+.nav-menu li:nth-child(4) > a{
+  color: var(--color-active);
+  font-weight: 600;
 }
 
 .sub-menu {
@@ -115,11 +133,160 @@ header {
   color: var(--color-active);
 }
 
+/* moblie */
+#menu-toggle {
+  display: none;
+}
+
+/* Label sẽ là nút bấm, chỉ hiển thị trên mobile */
+.menu-button-container {
+  display: none;
+  /* Mặc định ẩn trên desktop */
+  width: 30px;
+  height: 22px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: black;
+  position: absolute;
+  height: 2px;
+  width: 18px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
+}
+
+.menu-button::before {
+  content: '';
+  margin-top: -8px;
+}
+
+.menu-button::after {
+  content: '';
+  margin-top: 8px;
+}
+
+/* Thay đổi icon hamburger thành dấu 'X' khi menu được mở */
+#menu-toggle:checked+.menu-button-container .menu-button {
+  background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked+.menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+
+#menu-toggle:checked+.menu-button-container .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 30px 0;
+  }
+
+  .header-logo {
+    display: none;
+  }
+
+  .container-header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .contact {
+    font-size: 10px;
+    line-height: 16px;
+  }
+
+  .contact-phone {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .nav-menu {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bg-header-color);
+    gap: 10px;
+  }
+
+  .nav-menu li {
+    margin: 0;
+    width: 100%;
+  }
+
+  .nav-menu a {
+    display: block;
+    padding: 10px 40px;
+    text-align: center;
+    width: 100%;
+    border-radius: 0;
+    display: flex;
+    gap: 6px;
+    justify-content: space-between;
+  }
+
+  .menu-button {
+    margin-top: 6px;
+  }
+
+  .menu-button-container {
+    display: flex;
+    margin-top: 6px;
+  }
+
+  #menu-toggle:checked~.nav-menu {
+    max-height: 500px;
+    gap: 0;
+    z-index: 999;
+  }
+
+  #menu-toggle:checked ~ .overlay {
+    opacity: 1;
+    visibility: visible;
+  }
+}
 
 .contact-phone {
   font-weight: 700;
   font-size: 22px;
   line-height: 32px;
+}
+
+@media screen and (max-width: 992px) {
+  .contact-phone {
+    font-size: 14px;
+    line-height: 24px;
+  }
 }
 
 /* Main container */
@@ -131,7 +298,6 @@ header {
   display: flex;
   gap: 30px;
   padding-bottom: 150px;
-  margin: 0 135px;;
 }
 
 .left-profile {
@@ -232,7 +398,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all ease-in 0.25s;
+  
 }
 
 .social-item:hover {
@@ -272,7 +438,7 @@ header {
   justify-content: center;
   gap: 6px;
   color: white;
-  max-width: 470px;
+  max-width: calc(60%);
   text-align: center;
 }
 
@@ -281,11 +447,13 @@ header {
   font-weight: 400;
   line-height: 30px;
 }
+
 .cta-container .container-description .section-heading {
   font-size: 42px;
   font-weight: 700;
   line-height: 52px;
 }
+
 .cta-container .container-description .section-description {
   margin-top: 12px;
   font-size: 18px;
@@ -306,9 +474,8 @@ header {
   cursor: pointer;
   outline: none;
 }
-
 .cta-button:hover{
-  background-color: rgb(136, 38, 2);
+  background-color: brown;
 }
 
 /* Footer */
@@ -324,11 +491,38 @@ footer {
   gap: 70px;
 }
 
+@media screen and (max-width: 1200px) {
+  .footer-container {
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .footer-container {
+    gap: 20px;
+  }
+  .footer-map {
+    flex: 1;
+  }
+}
+
 .footer-nav {
   display: flex;
   gap: 70px;
   align-items: start;
   justify-content: space-between;
+}
+
+@media screen and (max-width: 1200px) {
+  .footer-nav {
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .footer-nav {
+    gap: 20px;
+  }
 }
 
 .nav-list {
@@ -341,8 +535,9 @@ footer {
   font-family: var(--secondary-font);
   gap: 24px;
 }
+
 .nav-list a:hover{
-  color: #FD6038;
+  color: var(--color-active);
 }
 
 .nav-heading {
@@ -360,6 +555,16 @@ footer {
   font-size: 16px;
   line-height: 28px;
   color: #BECCC7;
+}
+
+@media screen and (max-width: 992px) {
+  .nav-heading {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .nav-item {
+    font-size: 14px;
+  }
 }
 
 .footer-map {
@@ -389,8 +594,10 @@ footer {
   outline: none;
 }
 .map-btn:hover{
- background-color: #FD6038;
+  background-color: var(--color-active);
+  color: #fff;
 }
+
 .footer-line {
   width: 100%;
   height: 1px;
@@ -464,45 +671,6 @@ footer {
     line-height: 16px;
   }
 
-  /* --- Header --- */
-  header {
-    padding: 30px 20px 30px;
-  }
-
-  .nav-menu,
-  .header-logo {
-    display: none;
-  }
-
-  .mobile-menu {
-    display: block;
-    width: 18px;
-    height: 16px;
-    cursor: pointer;
-  }
-
-  .mobile-menu img {
-    width: 18px;
-    height: 16px;
-    object-fit: cover;
-  }
-
-  .container-header-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .contact {
-    font-size: 10px;
-    line-height: 16px;
-  }
-
-  .contact-phone {
-    font-size: 12px;
-    line-height: 20px;
-  }
-
   /* Main */
   .main-container {
     margin-top: 40px;
@@ -510,7 +678,7 @@ footer {
 
   .profile-container {
     flex-direction: column;
-    margin: 0 20px;
+    /* margin: 0 20px; */
     gap: 49px;
     padding-bottom: 30px;
   }

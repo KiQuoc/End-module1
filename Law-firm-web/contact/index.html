@@ -1,170 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Contact Page</title>
-        <!-- Font -->
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-            rel="stylesheet">
-        <!-- Font -->
 
-        <!-- CSS  -->
-        <link rel="stylesheet" href="index.css">
-        <!-- CSS  -->
-    </head>
-    <body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+  <title>Law Firm</title>
+  <link rel="icon" href="../assets/favicon_io/favicon-32x32.png" type="image/png">
+  <!-- Font -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <!-- Font -->
 
-        <header class="header container">
-            <div class="container-header-content">
-            <div class="header-logo">
-                <img class="header-logo-img"
-                src="../assets//images/header/logo.png" alt="logo">
-            </div>
-            <div class="mobile-menu">
-                <img src="../assets/images/about/menu_hamburger.png"
-                alt="mobile_menu">
-            </div>
-                 <nav class="nav-bar">
-                        <ul class="nav-menu">
-                            <li><a href="../home/file.html">Home<i class="fa-solid fa-angle-up"></i></a></li>
-                            <li><a href="../about/index.html">About<i class="fa-solid fa-angle-down"></i></a></li>
-                            <li>
-                                <a href="">Practice Areas<i
-                                    class="fa-solid fa-angle-down"></i></a>
-                            </li>
-                            <li>
-                                <a href="../profile/index.html">Attorneys<i
-                                    class="fa-solid fa-angle-down"></i></a>
-                            </li>
-                            <li class="dropdown"><a href="">Page<i class="fa-solid fa-angle-down"></i></a>
-                                <ul class="sub-menu">
-                                <li>
-                                    <a href="../blog/index.html">Blog</a>
-                                </li>
-                                <li>
-                                    <a href="../contact/index.html">Contact</a>
-                                </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </nav>
-            <div class="contact-header">Call: <span class="contact-phone">(000) 123
-                456 789</span>
-            </div>
-            </div>
-        </header>
+  <!-- CSS  -->
+  <link rel="stylesheet" href="index.css">
+  <!-- CSS  -->
+</head>
 
-        <section id="contact" class="contact container">
-            <div class="form-header">
-                <h1>Contact With Justice Law Firm</h2>
-                <p>
-                    At The Justice Law Firm, our clients are our top priority.
-                    Fueled by passion
-                    and determination, we have a reputation for legal excellence
-                    in North Carolina.
-                    Our firm was established in 1907 and we’ve been delivering
-                    best.
-                </p>
-            </div>
+<body>
 
-            <form class="formContact">
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="first-name">First Name</label>
-                        <input type="text" id="first-name"
-                            placeholder="Your first name" />
-                    </div>
-                    <div class="form-group">
-                        <label for="last-name">Last Name</label>
-                        <input type="text" id="last-name"
-                            placeholder="Your last name" />
-                    </div>
-                </div>
+  <header class="header container">
+    <div class="container-header-content">
+      <div class="header-logo">
+        <img class="header-logo-img"
+          src="../assets//images/header/logo.png" alt="logo">
+      </div>
 
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="phone">Phone</label>
-                        <input type="text" id="phone"
-                            placeholder="Your phone here" />
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email"
-                            placeholder="Your email here" />
-                    </div>
-                </div>
+      <input id="menu-toggle" type="checkbox" />
+      <label class='menu-button-container' for="menu-toggle">
+        <div class='menu-button'></div>
+      </label>
 
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="service">Service</label>
-                        <select id="service">
-                            <option>Practice Area</option>
-                            <option>Criminal Law</option>
-                            <option>Family Law</option>
-                            <option>Business Law</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="lawyer">Lawyer</label>
-                        <select id="lawyer">
-                            <option>Specific Attorney</option>
-                            <option>John Doe</option>
-                            <option>Jane Smith</option>
-                        </select>
-                    </div>
-                </div>
+       <ul class="nav-menu">
+        <li><a href="../home/file.html">Home<i class="fa-solid fa-angle-down"></i></a></li>
+        <li><a href="../about/index.html">About<i class="fa-solid fa-angle-down"></i></a></li>
+        <li><a href="#">Practice Areas<i
+            class="fa-solid fa-angle-down"></i></a></li>
+        <li><a href="../profile/index.html">Attorneys<i
+            class="fa-solid fa-angle-down"></i></a></li>
+        <li class="dropdown"><a href="#">Page<i class="fa-solid fa-angle-up"></i></a>
+          <ul class="sub-menu">
+            <li>
+              <a href="../blog/index.html">Blog</a>
+            </li>
+            <li>
+              <a href="../contact/index.html">Contact</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <div class="contact">Call: <span class="contact-phone">(000) 123
+          456 789</span>
+      </div>
+      <label for="menu-toggle" class="overlay"></label>
+    </div>
+  </header>
 
-                <div class="form-group full-width">
-                    <label for="message">Message</label>
-                    <textarea id="message"
-                        placeholder="Write your messages"></textarea>
-                </div>
+  <section id="contact" class="contact container">
+    <div class="form-header">
+      <h1>Contact With Justice Law Firm</h2>
+        <p>
+          At The Justice Law Firm, our clients are our top
+          priority.
+          Fueled by passion
+          and determination, we have a reputation for legal
+          excellence
+          in North Carolina.
+          Our firm was established in 1907 and we’ve been
+          delivering
+          best.
+        </p>
+    </div>
 
-                <div class="form-actions">
-                    <button type="submit" class="btn-submit">Send
-                        Message</button>
-                </div>
-            </form>
-            <iframe
-                class="map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3874.7087809194936!2d109.18582247586566!3d13.796421096257395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x316f6b52d6095055%3A0x440c2b2b868ee49e!2zMjc2IMSQw6BvIFThuqVuLCBOaMahbiBCw6xuaCwgUXV5IE5oxqFuLCBCw6xuaCDEkOG7i25oLCBWaWV0bmFt!5e0!3m2!1sen!2s!4v1742917339742!5m2!1sen!2s"
-                width="100%"
-                height="667"
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade">
-            </iframe>
+    <form class="formContact">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="first-name">First Name</label>
+          <input type="text" id="first-name"
+            placeholder="Your first name" />
+        </div>
+        <div class="form-group">
+          <label for="last-name">Last Name</label>
+          <input type="text" id="last-name"
+            placeholder="Your last name" />
+        </div>
+      </div>
 
-            <footer class="footer">
-                <div class="footer-container">
-                    <!-- Logo + text -->
-                    <div class="footer-left">
-                        <img src="../assets/images/contact/logo.png" alt="Justice Law Firm"
-                            class="footer-logo" />
-                        <p>Copyright © 2022 UI HUIT All Rights Reserved</p>
-                    </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="phone">Phone</label>
+          <input type="text" id="phone"
+            placeholder="Your phone here" />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email"
+            placeholder="Your email here" />
+        </div>
+      </div>
 
-                    <!-- Social icons -->
-                    <div class="footer-right">
-                        <a href="#" class="social fb"><img src="../assets/images/contact/fb.png"
-                                alt="Facebook" /></a>
-                        <a href="#" class="social lk"><img src="../assets/images/contact/linked-in.png"
-                                alt="LinkedIn" /></a>
-                        <a href="#" class="social twitter"><img src="../assets/images/contact/x.png"
-                                alt="Twitter" /></a>
-                        <a href="#" class="social ig"><img src="../assets/images/contact/ig.png"
-                                alt="Instagram" /></a>
-                    </div>
-                </div>
-            </footer>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="service">Service</label>
+          <select id="service">
+            <option>Practice Area</option>
+            <option>Criminal Law</option>
+            <option>Family Law</option>
+            <option>Business Law</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="lawyer">Lawyer</label>
+          <select id="lawyer">
+            <option>Specific Attorney</option>
+            <option>John Doe</option>
+            <option>Jane Smith</option>
+          </select>
+        </div>
+      </div>
 
-        </section>
+      <div class="form-group full-width">
+        <label for="message">Message</label>
+        <textarea id="message"
+          placeholder="Write your messages"></textarea>
+      </div>
 
-    </body>
+      <div class="form-actions">
+        <button type="submit" class="btn-submit">Send
+          Message</button>
+      </div>
+    </form>
+
+    <div class="map-container">
+      <iframe class="map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3874.7087809194936!2d109.18582247586566!3d13.796421096257395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x316f6b52d6095055%3A0x440c2b2b868ee49e!2zMjc2IMSQw6BvIFThuqVuLCBOaMahbiBCw6xuaCwgUXV5IE5oxqFuLCBCw6xuaCDEkOG7i25oLCBWaWV0bmFt!5e0!3m2!1sen!2s!4v1742917339742!5m2!1sen!2s"
+        allowfullscreen loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Logo + text -->
+        <div class="footer-left">
+          <img src="../assets/images/contact/logo.png"
+            alt="Justice Law Firm" class="footer-logo" />
+          <p>Copyright © 2022 UI HUIT All Rights Reserved
+          </p>
+        </div>
+
+        <!-- Social icons -->
+        <div class="footer-right">
+          <a href="#" class="social fb"><img
+              src="../assets/images/contact/fb.png"
+              alt="Facebook" /></a>
+          <a href="#" class="social lk"><img
+              src="../assets/images/contact/linked-in.png"
+              alt="LinkedIn" /></a>
+          <a href="#" class="social twitter"><img
+              src="../assets/images/contact/x.png"
+              alt="Twitter" /></a>
+          <a href="#" class="social ig"><img
+              src="../assets/images/contact/ig.png"
+              alt="Instagram" /></a>
+        </div>
+      </div>
+    </footer>
+
+  </section>
+
+</body>
+
 </html>

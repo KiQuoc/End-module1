@@ -5,15 +5,16 @@
   <meta charset="UTF-8">
   <meta name="viewport"
     content="width=device-width, initial-scale=1.0">
-  <title>Profile Page</title>
+  <title>Law Firm</title>
+  <link rel="icon" href="../assets/favicon_io/favicon-32x32.png" type="image/png">
   <!-- Font -->
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Roboto+Slab:wght@100..900&display=swap"
-    rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet">
 
   <!-- CSS  -->
   <link rel="stylesheet" href="index.css">
@@ -21,47 +22,45 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="header container">
     <div class="container-header-content">
       <div class="header-logo">
         <img class="header-logo-img"
           src="../assets//images/header/logo.png" alt="logo">
       </div>
-      <div class="mobile-menu">
-        <img src="../assets/images/about/menu_hamburger.png"
-          alt="mobile_menu">
-      </div>
-        <nav class="nav-bar">
-          <ul class="nav-menu">
-              <li><a href="../home/file.html">Home<i class="fa-solid fa-angle-up"></i></a></li>
-              <li><a href="../about/index.html">About<i class="fa-solid fa-angle-down"></i></a></li>
-              <li>
-                <a href="">Practice Areas<i
-                    class="fa-solid fa-angle-down"></i></a>
-              </li>
-              <li>
-                <a href="../profile/index.html">Attorneys<i
-                    class="fa-solid fa-angle-down"></i></a>
-              </li>
-              <li class="dropdown"><a>Page<i class="fa-solid fa-angle-down"></i></a>
-                <ul class="sub-menu">
-                  <li>
-                    <a href="../blog/index.html">Blog</a>
-                  </li>
-                  <li>
-                    <a href="../contact/index.html">Contact</a>
-                  </li>
-                </ul>
-              </li>
+
+      <input id="menu-toggle" type="checkbox" />
+      <label class='menu-button-container' for="menu-toggle">
+        <div class='menu-button'></div>
+      </label>
+
+      <ul class="nav-menu">
+        <li><a href="../home/file.html">Home<i class="fa-solid fa-angle-down"></i></a></li>
+        <li><a href="../about/index.html">About<i class="fa-solid fa-angle-down"></i></a></li>
+        <li><a href="#">Practice Areas<i
+            class="fa-solid fa-angle-down"></i></a></li>
+        <li><a href="../profile/index.html">Attorneys<i
+            class="fa-solid fa-angle-up"></i></a></li>
+        <li class="dropdown"><a href="#">Page<i class="fa-solid fa-angle-down"></i></a>
+          <ul class="sub-menu">
+            <li>
+              <a href="../blog/index.html">Blog</a>
+            </li>
+            <li>
+              <a href="../contact/index.html">Contact</a>
+            </li>
           </ul>
-        </nav>
+        </li>
+      </ul>
       <div class="contact">Call: <span class="contact-phone">(000) 123
           456 789</span>
       </div>
+      <label for="menu-toggle" class="overlay"></label>
     </div>
   </header>
+
   <main class="main-container">
-    <div class="profile-container">
+    <div class="profile-container container">
       <div class="left-profile">
         <div class="profile-img-container">
           <img src="../assets/images/profile/profile_avt.png"
@@ -244,7 +243,7 @@
       <button class="cta-button">Get a Consultations</button>
     </div>
   </main>
-  <footer class="footer">
+  <footer class="footer container">
     <div class="footer-container">
       <div class="footer-nav">
         <div class="nav-list">
