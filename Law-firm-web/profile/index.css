@@ -361,6 +361,14 @@ header {
   gap: 6px;
 }
 
+.info-item a{
+  text-decoration: none;
+}
+
+.info-item a .info-detail:hover{
+  color: #f45b25;
+}
+
 .text-heading {
   font-weight: 700;
   font-size: 24px;
@@ -382,12 +390,19 @@ header {
   align-items: start;
   gap: 48px;
 }
+.profile-name a{
+  text-decoration: none;
+}
 
 .info-name {
+  color: #0E1412;
   font-weight: 700;
   font-size: 22px;
   line-height: 32px;
   font-family: var(--secondary-font);
+}
+.info-name:hover{
+ color: #f45b25;
 }
 
 .info-heading {
@@ -404,6 +419,10 @@ header {
   line-height: 28px;
   font-family: var(--secondary-font);
   color: #586863;
+}
+
+.info-detail:hover{
+  color: #f45b25;
 }
 
 .info-position {
@@ -566,6 +585,47 @@ footer {
 
 .nav-list a:hover{
   color: var(--color-active);
+}
+.nav-list-under{
+  display: flex;
+  flex-shrink: 0;
+  max-width: 237px;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  color: #BECCC7;
+/* P2 */
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 175% */
+  gap: 24px;
+}
+
+
+.nav-list-under a{
+  text-decoration: none;
+  color: #BECCC7;  
+
+}
+
+.nav-list-under a:hover{
+  color: #f45b25;
+}
+
+.Justice-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;           
+}
+
+.Justice-item a {
+  display: block;        
+  text-decoration: none;
+  color: #BECCC7;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-heading {
